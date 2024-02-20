@@ -10,11 +10,23 @@ class Coche{
     }
 
     reducidVelocidad(){
-        rhis.velocidad -=1;
+        this.velocidad -=1;
     }
 }
 
 
+class Autobus extends Coche{
+    constructor(modelo, velocidad, antiguedad){
+        super(modelo.velocidad.antiguedad);
+        this.altura = 5;
+
+    }
+    mostrarAltura(){
+        return "La altura es "+this.altura;
+    }
+}
+
+var autobus1 = new Autobus('Pegasus', 100, 2020);
 var coche1 = new Coche('BMW', 200, 2023);
 var coche2 = new Coche('AUDI', 130, 2022);
 var coche3 = new Coche('TESLA', 400, 2024);
